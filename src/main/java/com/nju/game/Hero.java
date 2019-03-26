@@ -1,5 +1,7 @@
 package com.nju.game;
 
+import com.nju.game.levels.ILevel;
+import com.nju.game.levels.LevelOne;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -19,4 +21,6 @@ public class Hero {
     private int currentMana;//当前法力值
     private int levelMana;//等级法力值
     private HeroStrategy heroStrategy;
+
+    private ILevel levelState = new LevelOne(this);
 }
