@@ -1,13 +1,13 @@
 package com.nju.game.levels;
 
-import com.nju.game.Hero;
+import com.nju.game.hero.AbstractHero;
 
 /**
  * @author: eumes
  * @date: 2019/3/26
  **/
 
-public class LevelOne extends ILevel{
+public class LevelOne extends AbstractLevel {
 
     private static final int level = 1;
 
@@ -15,7 +15,7 @@ public class LevelOne extends ILevel{
 
     private static final int levelRate = 100;
 
-    public LevelOne(Hero hero) {
+    public LevelOne(AbstractHero hero) {
         super(hero, level * levelRate);
     }
 
@@ -23,7 +23,7 @@ public class LevelOne extends ILevel{
         return level;
     }
 
-    public boolean levelUp(Hero hero) {
+    public boolean levelUp(AbstractHero hero) {
         super.upgrade(hero, upRate);
 
         hero.setLevelState(new LevelTwo(hero));

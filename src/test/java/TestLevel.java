@@ -1,6 +1,5 @@
-import com.nju.game.Hero;
-import com.nju.game.levels.ILevel;
-import com.nju.game.levels.LevelOne;
+import com.nju.game.hero.AbstractHero;
+import com.nju.game.hero.factory.OffensiveHeroFactory;
 
 /**
  * @author: eumes
@@ -9,19 +8,17 @@ import com.nju.game.levels.LevelOne;
 public class TestLevel {
 
     public static void main(String[] args) {
-        Hero hero = new Hero();
+        OffensiveHeroFactory offensiveHeroFactory = new OffensiveHeroFactory();
+        AbstractHero offensiveHero = offensiveHeroFactory.createHero();
 
-        hero.setAttackPoint(15);
-        hero.setArmorPoint(5);
-        hero.setTotalHealthPoint(100);
-        hero.setCurrentHealthPoint(100);
-        hero.setCurrentMana(50);
-        hero.setCurrentXP(0);
-        hero.setLevelMana(50);
+        System.out.println(offensiveHero.getHeroAttribute().toString());
 
-        ILevel levelOne = new LevelOne(hero);
 
-        System.out.println(hero.toString());
+        for (int i = 0; i < 11; i++) {
+            offensiveHero.upgrade();
+            System.out.println(offensiveHero.getHeroAttribute().toString());
+
+        }
 
 
     }

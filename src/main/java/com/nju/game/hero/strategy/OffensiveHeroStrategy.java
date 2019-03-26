@@ -13,14 +13,14 @@ import java.util.ArrayList;
 public class OffensiveHeroStrategy implements HeroStrategy {
     public void initMethod(HeroAttribute heroAttribute, ArrayList<AbstractAbility> abilities) {
         heroAttribute.setAttackPoint(60);
-        heroAttribute.setArmorPoint(10);
+        heroAttribute.setArmorPoint(15);
         heroAttribute.setCurrentHealthPoint(600);
         heroAttribute.setTotalHealthPoint(600);
         heroAttribute.setLevel(1);
         heroAttribute.setCurrentXP(0);
-        heroAttribute.setLevelXP(1000);
+//        heroAttribute.setLevelXP(1000);
         heroAttribute.setCurrentMana(500);
-        heroAttribute.setLevel(500);
+        heroAttribute.setLevelMana(500);
 
         CritAbility critAbility = new CritAbility();
         critAbility.setName("暴击技能");
