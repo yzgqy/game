@@ -18,4 +18,5 @@ public class Hero {
     private int levelXP;//等级经验值
     private int currentMana;//当前法力值
     private int levelMana;//等级法力值
+    private HeroStrategy heroStrategy;
 }
