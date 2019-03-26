@@ -7,7 +7,7 @@ import com.nju.game.hero.HeroAttribute;
  */
 public abstract class Decorator implements HeroComponent {
     protected HeroComponent heroComponent;
-//    protected HeroAttribute heroAttribute;
+    protected HeroAttribute heroAttribute;
 
     public void setHeroComponent(HeroComponent heroComponent) {
         this.heroComponent = heroComponent;

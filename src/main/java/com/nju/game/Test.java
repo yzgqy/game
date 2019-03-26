@@ -16,7 +16,7 @@ public class Test {
         System.out.println("=====创建进攻型英雄=====");
         OffensiveHeroFactory offensiveHeroFactory = new OffensiveHeroFactory();
         AbstractHero offensiveHero = offensiveHeroFactory.createHero();
-        System.out.println(offensiveHero.toString());
+//        System.out.println(offensiveHero.toString());
         System.out.println("属性值：");
         System.out.println(offensiveHero.getHeroAttribute().toString());
         System.out.println("=====创建完成=====");
@@ -32,18 +32,18 @@ public class Test {
         System.out.println(equipage.getHeroAttribute().toString());
         System.out.println("=====装备完成=====");
 
-        System.out.println("=====使用暴击技能=====");
-        ArrayList<AbstractAbility> abilities = offensiveHero.getAbilities();
-        abilities.get(0).setHeroComponent(equipage);
-        abilities.get(0).setHeroAttribute();
-        System.out.println("属性值：");
-        System.out.println(abilities.get(0).getHeroAttribute().toString());
-        System.out.println("=====使用眩晕技能=====");
-        abilities.get(1).setHeroComponent(equipage);
-        abilities.get(1).setHeroAttribute();
-        System.out.println("属性值：");
-        System.out.println(abilities.get(1).getHeroAttribute().toString());
-        System.out.println("=====技能使用完成=====");
+//        System.out.println("=====使用暴击技能=====");
+//        ArrayList<AbstractAbility> abilities = offensiveHero.getAbilities();
+//        abilities.get(0).setHeroComponent(equipage);
+//        abilities.get(0).setHeroAttribute();
+//        System.out.println("属性值：");
+//        System.out.println(abilities.get(0).getHeroAttribute().toString());
+//        System.out.println("=====使用眩晕技能=====");
+//        abilities.get(1).setHeroComponent(equipage);
+//        abilities.get(1).setHeroAttribute();
+//        System.out.println("属性值：");
+//        System.out.println(abilities.get(1).getHeroAttribute().toString());
+//        System.out.println("=====技能使用完成=====");
 
 
     }

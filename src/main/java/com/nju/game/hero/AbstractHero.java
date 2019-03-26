@@ -25,7 +25,7 @@ public abstract class AbstractHero implements HeroComponent {
     private HeroStrategy heroStrategy;//英雄策略
     private ArrayList<AbstractAbility> abilities = new ArrayList<AbstractAbility>();//英雄技能
     //英雄技能
-    public abstract void show();
+//    public abstract void show();
     public void init(){
         levelState = new LevelOne(this);
         heroStrategy.initMethod(this.heroAttribute,this.abilities);

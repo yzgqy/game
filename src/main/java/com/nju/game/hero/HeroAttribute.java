@@ -22,4 +22,18 @@ public class HeroAttribute {
     private int levelXP;//等级经验值
     private int currentMana;//当前法力值
     private int levelMana;//等级法力值
+
+    public void copy(HeroAttribute heroAttribute){
+        this.name = heroAttribute.getName();
+        this.attackPoint = heroAttribute.getAttackPoint();
+        this.armorPoint = heroAttribute.getArmorPoint();
+        this.currentHealthPoint = heroAttribute.getCurrentHealthPoint();
+        this.totalHealthPoint =heroAttribute.getTotalHealthPoint();
+        this.level = heroAttribute.getLevel();
+        this.currentXP = heroAttribute.getCurrentXP();
+        this.levelXP =heroAttribute.getLevelXP();
+        this.currentMana =heroAttribute.getCurrentMana();
+        this.levelMana = heroAttribute.getLevelMana();
+
+    }
 }

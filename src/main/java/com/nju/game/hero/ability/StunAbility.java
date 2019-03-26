@@ -14,12 +14,7 @@ import lombok.ToString;
 @ToString
 public class StunAbility extends AbstractAbility {
     private double stubRate;//眩晕概率
-    private HeroComponent heroComponent;
-    private HeroAttribute heroAttribute;
 
-    public StunAbility(HeroComponent heroComponent) {
-        this.heroComponent = heroComponent;
-    }
 //    public void setHeroComponent(HeroComponent heroComponent) {
 //        this.heroComponent = heroComponent;
 //    }
@@ -37,34 +32,25 @@ public class StunAbility extends AbstractAbility {
     }
 
     //    @Override
-    public String getDesc() {
-        return heroComponent.getDesc() + ",StunAbility";
-    }
+//    public String getDesc() {
+//        return heroComponent.getDesc() + ",StunAbility";
+//    }
 
     //    @Override
-    public HeroAttribute getHeroAttribute() {
-//        HeroAttribute heroAttribute = heroComponent.getHeroAttribute();
-//        int oldAttackPoint = heroAttribute.getAttackPoint(); //攻击力
-//        int oldCurrentMana = heroAttribute.getCurrentMana();//当前法力值
-//        int newAttackPoint = oldAttackPoint+this.damage;
+//    public HeroAttribute getHeroAttribute() {
+//        return this.heroAttribute;
+//    }
+
+
+//    @Override
+//    public void setHeroAttribute() {
+//        HeroAttribute oldHeroAttribute = heroComponent.getHeroAttribute();
+//        int oldAttackPoint = oldHeroAttribute.getAttackPoint(); //攻击力
+//        int oldCurrentMana = oldHeroAttribute.getCurrentMana();//当前法力值
+//        int newAttackPoint = oldAttackPoint + this.damage;
 //        int newCurrentMana = oldCurrentMana - this.mana;
-//        heroAttribute.setAttackPoint(newAttackPoint);
-//        heroAttribute.setCurrentMana(newCurrentMana);
-//        return heroAttribute;
-//        return heroComponent.getHeroAttribute();
-        return this.heroAttribute;
-    }
-
-
-    @Override
-    public void setHeroAttribute() {
-        HeroAttribute oldHeroAttribute = heroComponent.getHeroAttribute();
-        int oldAttackPoint = oldHeroAttribute.getAttackPoint(); //攻击力
-        int oldCurrentMana = oldHeroAttribute.getCurrentMana();//当前法力值
-        int newAttackPoint = oldAttackPoint + this.damage;
-        int newCurrentMana = oldCurrentMana - this.mana;
-        oldHeroAttribute.setAttackPoint(newAttackPoint);
-        oldHeroAttribute.setCurrentMana(newCurrentMana);
-        this.heroAttribute = oldHeroAttribute;
-    }
+//        oldHeroAttribute.setAttackPoint(newAttackPoint);
+//        oldHeroAttribute.setCurrentMana(newCurrentMana);
+//        this.heroAttribute = oldHeroAttribute;
+//    }
 }

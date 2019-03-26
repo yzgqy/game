@@ -11,7 +11,8 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public abstract class AbstractAbility extends Decorator {
+public abstract class AbstractAbility {
+//        extends Decorator {
     protected String name;//技能名称
     protected int level;//等级
     protected int type;//技能的类型，1-眩晕，2-暴击
