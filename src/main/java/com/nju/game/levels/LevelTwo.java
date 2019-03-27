@@ -39,11 +39,5 @@ public class LevelTwo extends AbstractLevel {
         System.out.println("learn skill 2-->3");
     }
 
-    public static void main(String[] args) {
-
-
-
-    }
-
 
 }
