@@ -2,6 +2,7 @@ package com.nju.game.hero;
 
 import com.nju.game.hero.ability.AbstractAbility;
 import com.nju.game.hero.decortor.HeroComponent;
+import com.nju.game.hero.equipage.AbstractEquipage;
 import com.nju.game.hero.strategy.HeroStrategy;
 import com.nju.game.levels.AbstractLevel;
 import com.nju.game.levels.LevelOne;
@@ -10,6 +11,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 英雄抽象类
@@ -23,7 +25,8 @@ public abstract class AbstractHero implements HeroComponent {
 
     private HeroAttribute heroAttribute = new HeroAttribute();//英雄属性值
     private HeroStrategy heroStrategy;//英雄策略
-    private ArrayList<AbstractAbility> abilities = new ArrayList<AbstractAbility>();//英雄技能
+    private List<AbstractAbility> abilities = new ArrayList<AbstractAbility>();//英雄技能
+    private List<AbstractEquipage> equipages = new ArrayList<AbstractEquipage>();//英雄装备
     //英雄技能
 //    public abstract void show();
     public void init(){
