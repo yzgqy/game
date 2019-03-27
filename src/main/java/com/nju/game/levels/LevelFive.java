@@ -33,11 +33,5 @@ public class LevelFive extends AbstractLevel {
     }
 
 
-    public static void main(String[] args) {
-
-
-
-    }
-
 
 }

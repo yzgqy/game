@@ -31,12 +31,4 @@ public class LevelEight extends AbstractLevel {
         return true;
     }
 
-
-    public static void main(String[] args) {
-
-
-
-    }
-
-
 }
