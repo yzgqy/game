@@ -6,12 +6,13 @@ import com.nju.game.hero.ability.CritAbility;
 import com.nju.game.hero.ability.StunAbility;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 进攻型英雄策略
  */
 public class OffensiveHeroStrategy implements HeroStrategy {
-    public void initMethod(HeroAttribute heroAttribute, ArrayList<AbstractAbility> abilities) {
+    public void initMethod(HeroAttribute heroAttribute, List<AbstractAbility> abilities) {
         heroAttribute.setAttackPoint(60);
         heroAttribute.setArmorPoint(15);
         heroAttribute.setCurrentHealthPoint(600);

@@ -8,6 +8,12 @@ import com.nju.game.hero.decortor.HeroComponent;
  */
 public class Armor extends AbstractEquipage {
     private int armorPoint;
+    public Armor(){
+        this.name = "盔甲";
+        this.level = 1;
+        this.stoneNum = 1;
+        this.armorPoint = 5;
+    }
 
     public Armor(HeroComponent heroComponent) {
         this.heroComponent = heroComponent;

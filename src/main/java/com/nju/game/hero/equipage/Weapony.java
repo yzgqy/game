@@ -8,6 +8,12 @@ import com.nju.game.hero.decortor.HeroComponent;
  */
 public class Weapony extends AbstractEquipage {
     private int damage;//伤害值
+    public Weapony(){
+        this.name = "武器";
+        this.level = 1;
+        this.stoneNum = 1;
+        this.damage = 5;
+    }
 
     public Weapony(HeroComponent heroComponent) {
         this.heroComponent = heroComponent;
